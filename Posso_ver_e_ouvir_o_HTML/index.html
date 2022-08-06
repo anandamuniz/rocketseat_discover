@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Áudio e Vídeo</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>WebSite com áudio e vídeo</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+        </ul>
+    </nav>
+
+    <h2>Veja esse vídeo</h2>
+   <div class="video">
+
+       <video controls     
+           width="320" 
+           height="240" 
+           preload="auto"
+           loop
+           poster="">
+           <source src="C:\Users\muniz\dwhelper\Gama Experience-2.mp4">        <!--fonte/endereço do vídeo-->
+           <p>Seu browser não suporta o vídeo, baixe-o aqui:</p>
+       </video>
+   </div>
+
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/AqJKAJ0TKms" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <h2>Agora uma músiquinha</h2>
+    <audio controls >    
+        <source src="./assets-example/assets-example/viper.mp3" type="audio/mp3">        <!--fonte/endereço do áudio-->
+        <source src="./assets-example/assets-example/viper.ogg" type="audio/ogg">
+        <p>Seu browser não suporta o áudio, baixe-o aqui:</p>
+    </audio>
+    
+    <h3>Onde estamos?</h3>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22249.610095466036!2d2.2960708202970106!3d48.85621831163138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1spt-BR!2sbr!4v1659710267039!5m2!1spt-BR!2sbr" 
+    width="500" 
+    height="250" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</body>
+</html>

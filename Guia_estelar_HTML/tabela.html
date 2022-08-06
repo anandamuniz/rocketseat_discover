@@ -1,0 +1,87 @@
+<table>
+    <caption> Lista de Pessoas </caption> <!--descrição da tabela-->
+    
+    <thead>         <!--cabeçalho da tabela-->
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+        </tr>
+    </thead>
+
+    <tbody>         <!--corpo da tabela-->
+        <tr>
+            <td>Ananda</td>
+            <td>29</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Anderson</td>
+            <td>34</td>
+            <td>Masculino</td>
+        </tr>
+    </tbody>
+
+    <tfoot>         <!--rodapé da tabela-->
+        <tr>
+            <td>Total:</td>
+            <td>63 anos</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+
+<!--Exemplo de tabela complexa
+
+    - 2 lojas;
+    - Quantos produtos foram produzidos;
+    - Quantos produtos foram vendidos;
+    - Nome dos produtos.
+
+-->
+
+<table>
+
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup>
+        <col>           <!--indica que a primeira coluna não tem cor-->
+        <col span="2" style="background-color: red;">        <!--span indica que a primeira e segunda coluna são da mesma cor cor-->
+        <col span="2" style="background-color: blue;">       <!--span indica que a terceira e quarta coluna são da mesma cor cor-->
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>               <!--mescla linhas-->
+            <th colspan="2" scope="colgroup">Loja 1</th>         <!--mescla colunas-->
+            <th colspan="2" scope="colgroup">Loja 2</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+
+</table>

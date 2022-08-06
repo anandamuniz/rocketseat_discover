@@ -1,0 +1,90 @@
+h1 {
+    color: blue;
+    border: 1px solid red;
+    margin: 200px;
+    padding: 60px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+li {
+    font-size: 90%;
+}
+
+body {
+    height: 100vh;
+}
+
+/*.box {
+    height: calc(100% - 40px);
+    width: 400px;
+    background-image: url(http://www...);
+    background-repeat: no-repeat;
+    background-position: reght 50px;
+}
+
+.box::after {
+	content: "Isso é uma string"
+}*/
+
+div {
+    width: 400px;           	/*largura da caixa*/				
+    height: 200px;              /*altura da caixa*/
+    border: 4px solid #009911;    /*espessura da borda (para ter cor precisa colocar o valor solid)*/
+    margin: 5%;                /*20% da padrão*/
+    padding: 0 20px;            /*0: refere-se a cimma/baixo; 20px: refere-se a direita/esquerda*/
+    box-sizing: content-box;    /*o tamanho da caixa é regulado pelo tamanho do texto(coneúdo)*/
+    border-top: none;        /*para retirar a borda de baixo*/
+    outline: 4px solid blue;
+}
+
+h2 {
+    /*color: #090;  /*ordem: RED GREEN BLUE, para enfatizar a cor basta mudar o 9 de posição*/
+    /*color: #0000ff88 /*ff deixa a cor mais clara e 88 mais transparente*/
+    /*color: rgb(255, 0, 150, 0.6) /*0.6 (ou 60%) representa a transparencia*/
+    color: hsl(300, 100%, 50%, 80%)
+}
+
+
+header {
+    height: 200px;
+    border: 5px dashed red;
+
+    background-color: rgb(10, 10, 150, 0.6); /*cor de fundo*/
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5TE57BIrJlC7Lzbqa3NGcbGPdzZ5-yZ5iTesVtrkAPecVZRmzPBqIhRq1_DvEIVmDy1o&usqp=CAU);
+    background-repeat: no-repeat; /* para não repetir a imagem*/
+    /*background-repeat: repeat-y; repete apenas no eixo y, e repeat-x repete no eixo x*/
+    background-position: left;    /*posição da imagem*/
+    background-size: 25% 100%; /*cover: ocupa toda a caixa. contain: ficar dentro da caixa. 20% 75%: primeiro valor altera largura e segundo valor altera a altura. pode usar em, px, auto*/
+    background-origin: content-box;
+    background-clip: content-box;
+    /*background: linear-gradient(45deg, red, yellow) /*cor em gradiente (angulação, cor que começa, cor que termina)*/
+    /*background: radial-gradient(green, red, yellow) /*gradiente radial*/
+}
+
+main {
+    color: white;
+    font-size: 25px;
+  
+
+    background-color: rgb(10, 10, 150, 0.6); /*cor de fundo*/
+    background-image: url(https://png.pngtree.com/template/20190716/ourlarge/pngtree-triangle-icon-with-letters-a-logo-vector-template-image_228211.jpg);
+    background-repeat: no-repeat; /* para não repetir a imagem*/
+    /*background-repeat: repeat-y; repete apenas no eixo y, e repeat-x repete no eixo x*/
+    background-position: center;    /*posição da imagem*/
+    background-size: cover; /*cover: ocupa toda a caixa. contain: ficar dentro da caixa. 20% 75%: primeiro valor altera largura e segundo valor altera a altura. pode usar em, px, auto*/
+    background-origin: border-box;
+    background-clip: border-box;
+    background-attachment: fixed;   /*a imagem fica parada atrás do texto*/
+
+}
+
+
+
+
+
+
+
+
+
+
