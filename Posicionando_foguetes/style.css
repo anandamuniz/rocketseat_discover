@@ -4,9 +4,11 @@
     margin-bottom: 8px;
 }
 
+/*POSITION STATIC: segue o fluxo normal do HTML*/
+
 .box1 {
     background-color: red;
-    position: fixed;
+    position: static;   
     left: 100px;
     top: 80px
 }
