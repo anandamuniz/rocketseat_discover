@@ -1,0 +1,54 @@
+/*grid-template-areas: 
+        ""
+        ""
+        "";
+    ^ para definir as áreas da viewport, cada aspa representa uma linha e dentro das aspas coloca-se o nome das colunas
+*/
+
+/* grid-template-rows: 30px 1fr 40px;
+    ^ define o tamanho de cada linha, onde fr representa um tamanho flexivel que varia de acordo com o tamanho viewport
+   grid-template-columns: 1fr 80px;
+    ^ define o tamanho de cada coluna.
+*/
+
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+
+    grid-template-rows: 30px 1fr 40px;
+    grid-template-columns: 1fr 80px;
+}
+
+/*grid-area: nome_da_coluna_definido_no_body;*/
+
+header {
+    grid-area: header;
+    background-color: green;
+
+    display: flex;              /*Usando o flexbox no grid para colocar elementos alinhados dentro de uma caixa*/
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8px;
+}
+
+main {
+    grid-area: main;
+    background-color: red;
+}
+
+aside {
+    grid-area: aside;
+    background-color: blue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: gray;
+}

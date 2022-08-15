@@ -1,0 +1,231 @@
+<!--
+    <fieldset>: adiciona o quadro branco
+    <legend>: referencia o quadro
+-->
+
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+    </fieldset>
+</form>
+
+<label for="nome">Nome:</label>
+<input id="nome" type="text">
+
+<button type="submit">Enviar</button>   <!-- Atributos: type: submit e button (envia o formulário) | reset (limpa o formulário) | -->
+
+<input 
+        type="text" 
+        list="fruitsdata" 
+        placeholder="Escolha uma fruta">
+
+<datalist id="fruitsdata">
+    <option>maçã</option>
+    <option>banana</option>
+    <option>morango</option>
+    <option>acerola</option>
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#00ff00</option>
+    <option>#ff0000</option>
+    <option>#0000ff</option>
+</datalist>
+
+<input type="color" list="colorsdata">
+
+<input type="date">
+<input type="number">
+
+<!--Atributos comuns-->
+
+<input type="email" autocomplete="email">       <!--sugere um email mais usado pelo navegador-->
+<input type="text" autofocus>       <!--foca nesse input-->
+<p>
+
+</p>
+<input type="text" value="escreva aqui" disabled>        <!--desabilita o input-->
+<input type="text" value="escreva aqui" readonly>
+
+<p></p>
+<form id="meu-form"></form>         <!--o id serve para identificar o form-->
+<input name="nome" type="text" form="meu-form"> <!--name: nomeia o input para que ele possa ser resgatado posteriormente | form: retoma o formulário identificado pelo nome-->
+
+<input type="text" required>        <!--torma o campo obrigatório-->
+
+<input type="password" placeholder="Digite sua senha">
+
+<p></p>
+
+<!-- minlength: Mínimo de caracteres permitido na senha 
+     maxlength: máximo de caracteres permitido
+     size: faz o tamanho do campo ser maior ou menor
+-->
+<form action="">
+    <input type="password"
+        minlength="4"
+        maxlength="8"
+        size="8">  
+</form>     
+
+<!--pattern: senha exige um formato específico. Para esse caso, a senha deve conter números de 0 a 9, letras entre a e f (maiúsculas ou minúsculas), no mínimo 4 e no máximo 8 caracteres.
+    title: mensagem que aparece quando o usuário digita uma senha em formato diferente do exigido-->
+<form action="">
+    <input type="password"
+        pattern="[0-9a-fA-F]{4,8}"
+        title="Coloque HEX no mínimo 4 caracteres e no máximo 8 caracteres."
+        >  
+</form> 
+
+<!--Mudança do teclado no smartfone-->
+<form action="">
+    <input type="password"
+           inputmode="numeric">  
+</form>
+
+<!--Sugestão de senha. new-password: o navegador sugere uma nova senha.-->
+<form action="">
+    <input type="password"
+           autocomplete="new-password">  
+</form>
+
+
+<!----------EMAIL------------>
+<form action="">
+    <input type="email">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--só aceita email com a terminação especificada-->
+<form action="">
+    <input type="email"
+    pattern=".+@rocketseat\.com\.br">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--list: lista de sugestão-->
+<form action="">
+    <datalist id="emailslist">
+        <option>ananda.muniz@b.com</option>
+    </datalist>
+    <input type="email"
+        list="emailslist">
+    <button type="submit">Enviar</button>
+</form>
+
+<!----------URL------------>
+<!--pattern: usa expressões regulares para validar o campo.-->
+
+<input type="url"
+pattern=".*\.com\.br.*"
+spellcheck="true">
+
+<!----------FILE------------>
+<input type="file" accept="image/*">        <!--/* significa todo tipo, isto é, image/* aceita todo tipo de imagem.-->
+
+<!--para envio dos arquivos, estrutura obrigatória para file -->
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file">
+</form>
+
+<!----------COLOR------------>
+<input type="color" value="#ff0000">
+
+<datalist id="colorsdata">
+    <option>#0000ff</option>
+</datalist>
+<input type="color" list="colorsdata">
+
+<!----------CHECKBOX------------>
+<label for="subscribe">Receber notificações</label>
+<input type="checkbox" name="subscribe" id="subscribe" checked>
+
+<!--marcar múltiplos valores-->
+<!--O elemento <fieldset> é usado para agrupar elementos-->
+
+<fieldset>
+    <legend> Marque seu interesse</legend>
+    <div>
+        <input type="checkbox" id="coding" name="interesse" value="coding" checked>
+        <label for="coding">Código</label>
+    </div>
+    <div>
+        <input type="checkbox" id="music" name="interesse" value="music">
+        <label for="music">Múscia</label>
+    </div>
+</fieldset>
+
+
+<!----------HIDDEN------------>
+<!--usado para enviar o horário que o formulário foi preenchido, por exemplo-->
+<input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+
+
+<!----------RADIO------------>
+<fieldset>
+    <legend>Bora tomar um café?</legend>
+    <label for="yep">sim</label>
+    <input type="radio" id="yep" name="coffee" value="yes">
+    <label for="nono">não</label>
+    <input type="radio" id="nono" name="coffee" value="no">
+</fieldset>
+
+<!---------------Textarea----------------->
+<textarea name="mensagem" id="mensagem" cols="30" rows="5" wrap="off"></textarea>
+
+<!---------- SELECT / OPTION ------------->
+<label for="carmodel">Qual o modelo do carro?</label>
+<br>
+<select name="carmodel" id="carselect">
+    <option value="">Selecione um modelo</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="bmw">X6</option>
+</select>
+
+<p></p>
+<!---------------------- OPTGROUP ---------------------->
+
+<label>Selecione um pet:
+    <select name="pets">
+        <optgroup label="pets de 4 patas">
+            <option value="dog">Cachorro</option>
+            <option value="cat">Gato</option>
+            <option value="hamster">Hamster</option>
+        </optgroup>
+        <optgroup label="pets com asas">
+            <option value="passaro">Pássaro</option>
+            <option value="gaviao">Gavião</option>
+            <option value="pomba">Pomba</option>
+        </optgroup>
+    </select>
+</label>
+<p></p>
+<!------------------ SEARCH ---------------------->
+
+<datalist id="searchterms">
+    <option>Mac</option>
+    <option>Windows</option>
+    <option>Linux</option>
+</datalist>
+
+<form action="">
+    <input type="search" name="q" list="searchterms" placeholder="Digite seu termo de busca" size="29" aria-label="Campo de pesquisa">
+    <button>Pesquisar</button>
+</form>
+
+<!------------------ RANGE ---------------------->
+
+<input type="range" min="0" max="10" step="5">
+
+<!------------------ DATA E HORA ---------------------->
+
+<input type="date">
+
+<input type="datetime-local">   <!--data e hora-->
+
+<input type="month">    <!--mês e ano-->
+
+<input type="time">     <!--hora-->
+
+<input type="week">     <!--semana-->

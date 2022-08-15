@@ -1,0 +1,35 @@
+/*CSS*/
+
+/* "Times New Roman", Times, serif é uma lista de fontes e usadas na ordem que estão escritas.
+Times e serif são colocadas como fallback font, ou seja, se não tiver a fonte Times New Roman procura-se a fonte Times, se essa também estiver indisponível, usa-se a serif*/
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-variant: small-caps;   /*Faz variações na apresentação da fonte. Small-caps: deixa as letras maiúsculas*/
+
+    font-stretch: expanded;     /*Alargamento ou encolhimento da fonte*/
+
+    letter-spacing: 4px;        /*Define o espaçamento entre os caracteres.*/
+
+    word-spacing: 1em;          /*Define o espaçamento entre as palavras*/
+
+    line-height: 1.5;           /*Espaçamento entre linhas*/
+
+    text-transform: lowercase;  /*Variações no texto. lowercase: deixa todas as letras minúscula. capitalize: letras iniciais maiúsculas*/
+
+    text-decoration: underline wavy blue;     /*underline: coloca linhha abaixo do texto; overline: coloca linha acima do texto; line-through: linha cortando o texto.*/
+
+    text-align: center;         /*Alinhamento de um texto.*/
+
+    text-shadow: 1px 1px 8px red,
+                 2px 2px 1px green; /* offset-x | offset-y | blur-radius | color */
+
+}
+
+

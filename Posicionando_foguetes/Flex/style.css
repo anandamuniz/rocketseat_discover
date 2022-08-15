@@ -1,0 +1,42 @@
+/*posicionamento dos elementos dentro da caixa body*/
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+}
+
+/*
+--> display: flex : uma caixa ao lado da outra (sem espaçamento entre as caixas);
+--> flex-direction: column : uma caixa embaixo da outra (sem espaçamento entre as caixas), para colocar a direção em linha: row;
+--> justify-content: space-between : espaço entre os elementos;
+*/
+
+/*posicionamento dos filhos do body*/
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+ 
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
