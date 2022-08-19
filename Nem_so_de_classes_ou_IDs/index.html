@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./style.css">
+   
+    <title>Document</title>
+</head>
+<>
+    <!--TIPOS DE SELETORES-->
+
+<!--
+    - Element Selector: todos os elementos HTML;
+-->
+
+<h1>Título</h1>
+<p>conteúdo</p>
+
+<!--
+    - ID Selector: Um elemento que tenha um atributo id;
+                Cada id deverá ser único;
+                Usa-se # para indicar um ID selector.
+-->
+
+<h1 id="title">Título da página</h1>
+
+<!--
+    - Class Selector: Os elementos com atributo class;
+                    Podemos ter uma ou mais classes;
+                    Usa-se . para indicar um class selector;
+                    Todos os elementos com a mesma class são alterados.
+-->
+<h1 class="red big">Título da página</h1>
+
+<!--
+    - Attribute Selector: Um elemento que tenha um atributo específico
+-->
+<h1 title="Algum titlulo">Título da página</h1>
+
+<!--
+    Pseudo-class Selector: Elementos em um estado específico
+-->
+
+<h1 class="red big">Título da página</h1>
+<p class="red big">Conteúdo da minha página</p>
+
+
+<!-- COMBINADORES -->
+
+<!--
+    Descendant combinator
+-->
+
+	<article>
+		<h2>Um Título</h2>
+	</article>
+
+<!--
+    Child combinator
+-->
+   
+        <ul>            <!--pega apenas o primeiro <ul> <li> que vier depois do body, se tiver algum elemento entre o body o ul o estilo não seria aplicado-->
+          <li>Item 1</li>
+          <ul>
+            <li>Item 2</li>
+          </ul>
+        </ul>
+
+<!--
+    Adjacent sibling combinator
+-->
+        
+        <h1>
+            Título
+          </h1>
+          <p>               <!--esse p é o irmão direto do h1-->
+            Esse é um parágrafo
+          </p>
+          <p>
+            Mais um parágrafo
+          </p>
+
+          <input type="text" disabled>
+          <input type="text" required>
+
+
+</body>
+</html>

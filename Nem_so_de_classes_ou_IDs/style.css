@@ -1,0 +1,130 @@
+/*SELETORES*/
+
+/*Element Selector*/
+h1 {
+	color: blue;
+	font-size: 60px;
+}
+
+p {
+	color: green;
+}
+
+/*ID Selector*/
+#title {
+  color: yellow;
+}
+
+/*Class Selector*/
+.red {
+color: red;
+}
+
+.big {
+	font-size: 3em;
+}
+
+/*Attribute Selector*/
+[title] {
+	color: orange;
+}
+
+/*Pseudo-class Selector*/
+p:hover {
+	color: red;
+}
+
+h1:hover {
+	color: red;
+}
+
+/*Multiplos*/
+h1, p, .title, .title:hover {
+	color: red;
+}
+
+
+/*COMBINATORS*/
+
+/*Descendant combinator*/
+body article h2 {
+	color: red;
+}
+
+/*Child combinator*/
+body > ul > li {
+	color: blue;
+}
+
+/*Adjacent sibling combinator*/
+h1 + p {
+	color: red;
+}
+
+/* General sibling combinator */
+
+h1 ~ p {                /*vai colorir todos os p que vierem após o h1*/
+	color: red;
+}
+
+/*first-child: primeiro filho do grupo*/
+ul li:first-child {
+    font-weight: bold;
+  }
+
+/*nth-of-type: pega o elemento por tipo e posição*/
+ul li:nth-of-type(1) {          /*dos tipos de li pega aquele da posição 1*/
+  font-weight: bold;
+}
+
+/*nth-child: conta os filhos de um grupo*/
+ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+/*nth-child odd e even: estilo de acordo com a posição*/
+ul li:nth-child(odd) {          /*posições ímpares(1º, 3º, 5º...)*/
+    color: gray;
+}
+
+ul li:nth-child(even) {          /*posições de números pares(2º, 4º, 6º...)*/
+    color: blue;
+}
+
+/*houver*/
+a:hover {           /*Vai mudar a cor do link para vermelho quando o usuário passar o mouse sobre o link*/
+    color: red;
+}
+
+/*focus*/
+input:focus {               /*forma de mostrar qual o input "ativo", a borda irá ficar vermelha*/
+    border-color: red;
+  }
+
+/*:disabled*/
+
+input:disabled {            /*enquanto o input for disabled o fundo será green*/
+  background-color: green;
+}
+
+/*:required*/
+
+input:required {
+  background-color: red;
+}
+
+/*******Pseudo-elements********/
+/*before*/
+li::before {
+    content: "> "
+}
+
+/*after: adiciona um pseudo-elemento depois do elemento selecionado.*/
+li::after{
+    content: ";"
+}
+ 
+/*first-line pega a primeira linha de um texto.*/
+p::first-line {
+      font-weight: bold;
+}
