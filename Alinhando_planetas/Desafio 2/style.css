@@ -1,0 +1,51 @@
+body {
+    min-height: 100vh;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .8rem;
+}
+
+button {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   line-height: 0;
+   gap: .4rem;
+
+   background: lightgreen;
+   font-weight: bold;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+
+    padding: 2px;
+}
+
+/*FOOTER*/
+
+footer {
+    background: lightgray;
+    height: 3rem;
+    flex: 1;
+
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
