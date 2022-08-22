@@ -1,0 +1,114 @@
+
+.flexbox {
+    display: flex;          /*permite que os elementos da div pai deixem de ser block e passem a ser flex, recebendo melhor alinhamento, tamanho e ordenação*/
+    flex-direction: column;         /*muda o eixo principal e o eixo cruzado*/
+    justify-content: flex-end;      /*joga o texto para o fim do eixo*/
+
+}
+
+/*FLEX SIZING*/
+.flexbox {
+    display: flex;
+    border: 1px solid red;
+    height: 200px;
+}
+
+.item {
+    background-color: gray;
+    border: 1px solid;
+   /* flex: 1;  */      /*preenchimento dos espaços flex container*/
+}
+
+
+/*Direção dos itens*/
+.container {
+    display: flex;
+    flex-direction: row-reverse;  /*coloca o texto para o fim do eixo padrão na ordem do ultimo para o primeiro caractere, isto é, se imprime ABC no padrão, com o flex-direction: row-reverse irá imprimir CBA no conto direito do navegador*/
+
+}
+
+/*Múltiplas linhas*/
+
+.box {
+    display: flex;
+   /*flex-wrap: wrap;*/
+}
+
+/*Flex-flow*/
+
+.box {
+    display: flex;
+   /* flex-flow: column wrap;  */       /*também funciona só com uma propriedade*/
+}
+
+/*Alinhamento*/
+.boox {
+    display: flex;
+    /*justify-content: space-evenly;*/
+}
+
+/*GAP*/
+.boox {
+    display: flex;
+   /* gap: 5em;*/
+}
+
+/*FLEX_BASIS*/
+.boox div {
+    border: 1px solid;
+    /*flex-basis: 30em;*/
+}
+
+.boox div:nth-child(2),
+.boox div:nth-child(3) {
+    flex-grow: 1;       /*divide o espaço vazio para o item 2 e o item 3*/
+    flex-shrink: 2;
+}
+
+.boox div:nth-child(1) {
+    flex-grow: 2;       /*pega duas frações do espaço vazio para o item 1, e distribui o resto para os itens 2 e 3 da propriedade anterior*/
+}
+
+/*flex-shrink*/
+.boox div:nth-child(2),
+.boox div:nth-child(3) { /*o item 2 e o item 3 fica comprimidos no centro (são empurrados pelos itens da lateral), enquanto os itens 1 e 4 ocupam igualmente os espaço restante, pois neles estão aplicados o padrão*/
+    flex-shrink: 2; /*quanto maior o valor dessa propriedade mais comprimido ficará o item, chegando a ficar apenas do tamanho do texto*/ 
+    
+}
+
+/*Alterando tamanho de múltiplos itens*/
+
+.page {
+    border: 2px solid;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+aside {
+    background: lightgreen;
+    flex: 1;        /*flex-grow: 1, uma fração do browser para o aside*/
+}
+
+main {
+    background: lightblue;
+    flex: 1;        /*flex-grow: 2, duas frações do browser para o main*/
+
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(1) {
+    background: lightgoldenrodyellow;
+    flex: 2;        /*cresce por igual pegando 2 alturas*/
+}
+
+main section:nth-child(2) {
+    background: lightcoral;
+    flex: 10 80px;  /*o flex-basis tem mais força no tamanho da caixa*/
+}
+
+main section:nth-child(3) {
+    background: lightpink;
+    flex: 1;    /*cresce por igual pegando 1 alturas*/
+}

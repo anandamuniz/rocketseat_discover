@@ -1,0 +1,77 @@
+
+* {
+    font-family: 'Roboto-serif', sans-serif;
+    background: whitesmoke;
+
+}
+
+/*HEADER*/
+
+
+header img {
+    width: 45px;
+    height: 50px;
+
+    padding: 40px;
+    background: white;
+}
+
+.menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+    background: white;
+
+    gap: .8rem;
+}
+
+ul li {
+    background: white;
+}
+
+ul li:last-child {
+    background: rgb(144, 203, 243);
+    color: green;
+    padding: .8rem;
+
+    font-weight: bold;
+}
+
+
+/*MAIN*/
+
+.container {
+    display: flex;
+
+    gap: 1rem;
+}
+
+aside, main {
+    border: 1px solid;
+    height: 50vh;
+}
+
+aside {
+    background: bisque;
+    flex-basis: 25%;
+}
+
+main {
+    background: lightcoral;
+    flex: 1;
+}
+
+
+
+
+
+
