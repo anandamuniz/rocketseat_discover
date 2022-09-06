@@ -20,7 +20,7 @@ class Poligono {
 //this faz referência ao objeto do qual a função é uma propriedade.
 
     get area() {                    //get associa uma propriedade de um objeto a uma função que será chamada quando tal propriedade é acessada.
-        return this.#calcularArea()
+        return this.#calcularArea()             //get permite o acesso aos atributos altura/largura
     }
 
     #calcularArea() {
