@@ -1,0 +1,18 @@
+{
+    "nome": "Ananda",       
+    "idade": 29,
+    "filmes_preferidos": [          
+        "garota exemplar",
+        "o contador"
+    ],
+    "rotina": {
+        "manhã": "",
+        "tarde": [
+            "array dentro de objeto"
+        ],
+        "noite": {
+            "objeto dentro de objeto":"w"
+        }
+    }
+}
+
